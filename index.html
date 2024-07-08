@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice Roll Simulator</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Dice Roll Simulator</h1>
+  <p>Click the button to roll the dice.</p><br>
+  <div>
+    <label for="numDice">Number of Dice:</label>
+    <select id="numDice">
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+
+    </select> <br>
+    <br><label for="numSides">Number of Sides:</label>
+    <select id="numSides">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6" selected>6</option>
+    </select>
+  </div> <br>
+  <div class="dice" id="dice"></div>
+  <h3 id="sum"> </h3>
+  <button class="btn" onclick="rollDice()">Roll Dice</button>
+  <br>
+  <p>(Press SpaceBar to Roll Dice)</p>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
